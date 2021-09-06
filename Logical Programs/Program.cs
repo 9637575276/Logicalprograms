@@ -6,22 +6,17 @@ namespace Logical_Programs
     {
         static void Main(string[] args)
         {
-            int num, rem, sum = 0, i ;
-            num = int.Parse(Console.ReadLine());
-            Console.Write("Enter a no." +num);
-            for (i=1;i<num;i++)
+            int num, r, sum = 0, t;
+            Console.Write("Input a number: ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            for (t = num; t != 0; t = t / 10)
             {
-                rem = num % i;
-                if(rem==0)
-                {
-                    sum = sum + i;
-                }
+                r = t % 10;
+                sum = sum * 10 + r;
             }
-            if (sum == num)
-                Console.Write("perfect number");
-            else
-                Console.Write("Not a perfect number");
-            }
+            Console.Write("The number in reverse order is ", sum);
+        }
 
         }
     }
