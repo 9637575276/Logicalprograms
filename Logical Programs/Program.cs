@@ -6,21 +6,23 @@ namespace Logical_Programs
     {
         static void Main(string[] args)
         {
-            int n1 = 0, n2=1 , n3, i, number;
-            number = int.Parse(Console.ReadLine());
-           
-            Console.Write("Enter a number of numbers");
-            Console.Write(n1 + " " + n2 + " ");
-            
-            for (i=2;i<=number;i++)
+            int num, rem, sum = 0, i ;
+            num = int.Parse(Console.ReadLine());
+            Console.Write("Enter a no." +num);
+            for (i=1;i<num;i++)
             {
-                n3 = n1 + n2;
-                Console.Write(n3+" ");
-                n1 = n2;
-                n2 = n3;
+                rem = num % i;
+                if(rem==0)
+                {
+                    sum = sum + i;
+                }
+            }
+            if (sum == num)
+                Console.Write("perfect number");
+            else
+                Console.Write("Not a perfect number");
             }
 
         }
     }
-}
     
