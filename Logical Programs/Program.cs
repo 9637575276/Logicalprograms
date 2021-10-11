@@ -7,7 +7,7 @@ namespace Logical_Programs
         static void Main(string[] args)
         {
             int num, rem, sum = 0 ;
-            Console.Write("Enter a no." +num);
+            Console.Write("Enter a no." );
             num = int.Parse(Console.ReadLine());
            
             for (int i=1;i<num;i++)
