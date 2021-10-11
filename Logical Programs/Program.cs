@@ -6,11 +6,11 @@ namespace Logical_Programs
     {
         static void Main(string[] args)
         {
-            int num, i, ctr = 0;
+            int num,  ctr = 0;
 
             Console.Write("Input  a number: ");
             num = Convert.ToInt32(Console.ReadLine());
-            for (i = 2; i <= num / 2; i++)
+            for (int i = 2; i <= num / 2; i++)
             {
                 if (num % i == 0)
                 {
