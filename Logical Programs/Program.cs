@@ -6,10 +6,10 @@ namespace Logical_Programs
     {
         static void Main(string[] args)
         {
-            int num, rem, sum = 0, i ;
+            int num, rem, sum = 0 ;
             num = int.Parse(Console.ReadLine());
             Console.Write("Enter a no." +num);
-            for (i=1;i<num;i++)
+            for (int i=1;i<num;i++)
             {
                 rem = num % i;
                 if(rem==0)
